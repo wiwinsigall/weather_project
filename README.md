@@ -1,24 +1,29 @@
-# PREDICTION OF WEATHER CONDITIONS BASED ON SCREEN IMAGES USING CNN
+# 🌤️ PREDICTION OF WEATHER CONDITIONS BASED ON SCREEN IMAGES USING CNN
 
 ## Overview
 This project is focused on building a weather prediction system based on sky images using Convolutional Neural Networks (CNN). The model is capable of detecting and classifying weather conditions such as sunny, cloudy, and rainy from static sky images. The system is trained using the "Weather Recognizer with CNN" dataset from Kaggle.
 
 ## Table of Contents
-- [Installation](#installation)
-- [Dependencies](#dependencies)
-- [Usage](#usage)
-- [Training](#training)
-- [Results](#results)
-- [Model Evaluation](#model-evaluation)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgements](#acknowledgements)
+- [Overview](#overview)
+- [Dataset](#dataset-)
+- [CNN Architecture](#cnn-architecture-)
+- [Model Training](#model-training-)
+- [Evaluation Model](#evaluation-model-)
+- [Results](#results-)
+- [Deployment](#deployment-)
+  - [Save Model](#save-model-)
+  - [Flask Application](#flask-application-)
+  - [Flask Application Workflow](#flask-application-workflow-)
+  - [Website Interface](#website-interface-)
+- [Installation](#installation-)
+  - [Prerequisites](#prerequisites-)
+  - [Steps to Run the Project](#steps-to-run-the-project-)
 
-## Dataset
+## Dataset 📊
 The dataset used in this project is the [Weather Recognizer with CNN dataset](https://www.kaggle.com/datasets/abhay06102003/weather-recognizer-with-cnn) from Kaggle. It consists of sky images classified into three weather conditions:
-- Shine (253 images)
-- Clody (300 images)
-- Rainy (215 images)
+- 🌞 Shine (253 images)
+- ☁️ Clody (300 images)
+- 🌧️ Rainy (215 images)
 
 ## CNN Architecture
 - The model consists of multiple layers:
@@ -28,14 +33,14 @@ The dataset used in this project is the [Weather Recognizer with CNN dataset](ht
   - **Dense Layers** for classification.
   - **Dropout** layer to prevent overfitting.
 
-## Model Training
+## Model Training 📈
 - Model is trained using the **Adam optimizer** and **categorical cross-entropy loss**.
 - Early stopping is used to prevent overfitting during training, with a maximum of 30 epochs.
 
 ## Evaluation Model
 - The model's performance is evaluated using accuracy, loss, precision, recall, and F1-score.
 
-## Results
+## Results 🎯
 - **Training Accuracy:** 87.95% with a loss of 0.2886.
 - **Validation Accuracy:** 92.21% with a loss of 0.2831.
 The model shows great performance with high accuracy and low loss values, demonstrating its ability to generalize well to new sky images.
@@ -44,7 +49,7 @@ The model shows great performance with high accuracy and low loss values, demons
 ### Save Model
 The trained model is saved using the command `model.save('weather_model.h5')` to allow for reuse without retraining. The model is then downloaded from Google Colab using `files.download()` for deployment to the web application.
 
-### Flask Application
+### Flask Application 🖥️
 Next, a project folder named `WEATHER_PROJECT` is created, which contains the following files:
 - `app.py`: The main Flask application file.
 - `weather_model.h5`: The trained CNN model.
@@ -58,7 +63,7 @@ Next, a project folder named `WEATHER_PROJECT` is created, which contains the fo
 2. **Weather Prediction:** The model classifies the image and predicts the weather condition (sunny, cloudy, or rainy).
    - The web interface displays the predicted class and confidence level for the uploaded image.
 
-### Website Interface
+### Website Interface 🌐
 Below is the initial interface of the website for uploading sky images to predict weather conditions. This feature is built using Flask and supports JPG, JPEG, and PNG image formats. In this example, the uploaded image was successfully classified as 'shine' with a confidence level of 99.99%.
 
 ## Installation
@@ -73,7 +78,6 @@ Below is the initial interface of the website for uploading sky images to predic
 1. Clone this repository:
    ```bash
    git clone https://github.com/your-username/weather-prediction-cnn.git
-   cd weather-prediction-cnn
 2. Navigate to the project folder:
    ```bash
    cd weather_project
