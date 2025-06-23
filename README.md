@@ -66,7 +66,7 @@ Next, a project folder named `WEATHER_PROJECT` is created, which contains the fo
 
 ### Website Interface 🌐
 Below is the initial interface of the website for uploading sky images to predict weather conditions. This feature is built using Flask and supports JPG, JPEG, and PNG image formats. In this example, the uploaded image was successfully classified as 'shine' with a confidence level of 99.99%.
-![Website Interface](assets/web.png)
+<img src="assets/web.png" alt="Website Interface" width="500"/>
 
 ## Installation
 ### Prerequisites
