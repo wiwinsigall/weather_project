@@ -1,4 +1,4 @@
-# 🌤️ PREDICTION OF WEATHER CONDITIONS BASED ON SCREEN IMAGES USING CNN
+# 🌤️ Prediction of Weather Conditions Based on Screen Images Using CNN
 
 ## Overview
 This project is focused on building a weather prediction system based on sky images using Convolutional Neural Networks (CNN). The model is capable of detecting and classifying weather conditions such as sunny, cloudy, and rainy from static sky images. The system is trained using the "Weather Recognizer with CNN" dataset from Kaggle.
