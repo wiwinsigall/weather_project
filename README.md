@@ -50,16 +50,16 @@ The model shows great performance with high accuracy and low loss values, demons
 
 ## Deployment
 ### Save Model
-The trained model is saved using the command `model.save('weather_model.h5')` to allow for reuse without retraining. The model is then downloaded from Google Colab using `files.download()` for deployment to the web application.
+The trained model is saved using the command model.save('weather_model.h5') to allow for reuse without retraining. The model is then downloaded from Google Colab using files.download() for deployment to the web application.
 
 ### Flask Application 🖥️
-Next, a project folder named `WEATHER_PROJECT` is created, which contains the following files:
-- `app.py`: The main Flask application file.
-- `weather_model.h5`: The trained CNN model.
-- `classes.txt`: A file containing the class labels (sunny, cloudy, and rainy).
-- `requirements.txt`: A file listing the project dependencies.
-- `templates/index.html`: The main HTML page (frontend).
-- `static/uploads`: A folder to temporarily store uploaded images.
+Next, a project folder named WEATHER_PROJECT is created, which contains the following files:
+- app.py              : The main Flask application file.
+- weather_model.h5    : The trained CNN model.
+- classes.txt         : A file containing the class labels (sunny, cloudy, and rainy).
+- requirements.txt    : A file listing the project dependencies.
+- templates/index.html: The main HTML page (frontend).
+- static/uploads      : A folder to temporarily store uploaded images.
 
 #### Flask Application Workflow
 1. **Upload Image:** Users can upload sky images in JPG, JPEG, or PNG format.
@@ -82,16 +82,16 @@ Below is the initial interface of the website for uploading sky images to predic
 
 ### Steps to Run the Project
 1. Clone this repository:
-   ```bash
+   bash
    git clone https://github.com/your-username/weather-prediction-cnn.git
 2. Navigate to the project folder:
-   ```bash
+   bash
    cd weather_project
 3. Install all dependencies:
-   ```bash
+   bash
    pip install -r requirements.txt
 4. Run the application:
-   ```bash
+   bash
    python app.py
 5. Open your browser and go to http://127.0.0.1:5000 to view the web application.
 
