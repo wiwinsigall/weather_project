@@ -3,15 +3,6 @@
 ## Overview
 This project is focused on building a weather prediction system based on sky images using Convolutional Neural Networks (CNN). The model is capable of detecting and classifying weather conditions such as sunny, cloudy, and rainy from static sky images. The system is trained using the "Weather Recognizer with CNN" dataset from Kaggle.
 
-### Project Details
-- **Name:** Wiwin Sigalingging
-- **NIM:** 2155301162
-- **Class:** 4 TI B
-- **Instructor:** Ananda, S.Kom., M.T., Ph.D.
-- **Team Member:** Muhammad Anwar, S.Tr.Kom
-- **Institution:** Politeknik Caltex Riau
-- **Academic Year:** 2024/2025
-
 ## Dataset
 The dataset used in this project is the [Weather Recognizer with CNN dataset](https://www.kaggle.com/datasets/abhay06102003/weather-recognizer-with-cnn) from Kaggle. It consists of sky images classified into three weather conditions:
 - Sunny
@@ -73,4 +64,4 @@ The web interface displays the predicted class and confidence level for the uplo
 4. Run the application:
    ```bash
    python app.py
-5. Open your browser and go to http://localhost:5000 to view the web application.
+5. Open your browser and go to http://127.0.0.1:5000 to view the web application.
