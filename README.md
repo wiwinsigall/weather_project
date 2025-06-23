@@ -53,13 +53,24 @@ The web interface displays the predicted class and confidence level for the uplo
 
 ## Installation
 ### Prerequisites
-- Python 3.x
+- Python 3.10
 - TensorFlow
-- Streamlit
-- Other required Python libraries (e.g., NumPy, Pandas)
+- Flask
+- NumPy
+- Pillow
 
 ### Steps to Run the Project
 1. Clone this repository:
    ```bash
    git clone https://github.com/your-username/weather-prediction-cnn.git
    cd weather-prediction-cnn
+2. Navigate to the project folder:
+   ```bash
+   cd weather_project
+3. Install all dependencies:
+   ```bash
+   pip install -r requirements.txt
+4. Run the application:
+   ```bash
+   python app.py
+5. Open your browser and go to http://localhost:5000 to view the web application.
