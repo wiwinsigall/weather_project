@@ -44,7 +44,7 @@ The dataset used in this project is the [Weather Recognizer with CNN dataset](ht
 - **Training Accuracy:** 87.95% with a loss of 0.2886.
 - **Validation Accuracy:** 92.21% with a loss of 0.2831.
 The model shows great performance with high accuracy and low loss values, demonstrating its ability to generalize well to new sky images.
-![Training and Validation Results](assets/results.png)
+![Training and Validation Results](assets/result.png)
 
 ## Deployment
 ### Save Model
@@ -66,6 +66,7 @@ Next, a project folder named `WEATHER_PROJECT` is created, which contains the fo
 
 ### Website Interface 🌐
 Below is the initial interface of the website for uploading sky images to predict weather conditions. This feature is built using Flask and supports JPG, JPEG, and PNG image formats. In this example, the uploaded image was successfully classified as 'shine' with a confidence level of 99.99%.
+![Website Interface](assets/web.png)
 
 ## Installation
 ### Prerequisites
