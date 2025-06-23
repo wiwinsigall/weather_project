@@ -3,18 +3,24 @@
 ## Overview
 This project is focused on building a weather prediction system based on sky images using Convolutional Neural Networks (CNN). The model is capable of detecting and classifying weather conditions such as sunny, cloudy, and rainy from static sky images. The system is trained using the "Weather Recognizer with CNN" dataset from Kaggle.
 
+## Table of Contents
+- [Installation](#installation)
+- [Dependencies](#dependencies)
+- [Usage](#usage)
+- [Training](#training)
+- [Results](#results)
+- [Model Evaluation](#model-evaluation)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
+
 ## Dataset
 The dataset used in this project is the [Weather Recognizer with CNN dataset](https://www.kaggle.com/datasets/abhay06102003/weather-recognizer-with-cnn) from Kaggle. It consists of sky images classified into three weather conditions:
-- Sunny
-- Cloudy
-- Rainy
+- Shine (253 images)
+- Clody (300 images)
+- Rainy (215 images)
 
-## Methodology
-### Data Preprocessing
-- Images are resized to 150x150 pixels.
-- Data augmentation techniques such as rotation, flipping, zoom, and shift are applied to increase data variability.
-
-### CNN Architecture
+## CNN Architecture
 - The model consists of multiple layers:
   - **Convolutional Layers (Conv2D)** for feature extraction (edge, texture, and patterns).
   - **MaxPooling Layers (MaxPooling2D)** for dimensionality reduction.
@@ -22,11 +28,11 @@ The dataset used in this project is the [Weather Recognizer with CNN dataset](ht
   - **Dense Layers** for classification.
   - **Dropout** layer to prevent overfitting.
 
-### Model Training
+## Model Training
 - Model is trained using the **Adam optimizer** and **categorical cross-entropy loss**.
 - Early stopping is used to prevent overfitting during training, with a maximum of 30 epochs.
 
-### Evaluation Metrics
+## Evaluation Model
 - The model's performance is evaluated using accuracy, loss, precision, recall, and F1-score.
 
 ## Results
@@ -35,19 +41,32 @@ The dataset used in this project is the [Weather Recognizer with CNN dataset](ht
 The model shows great performance with high accuracy and low loss values, demonstrating its ability to generalize well to new sky images.
 
 ## Deployment
-The trained model is saved as `weather_model.h5` and deployed using **Streamlit** to create a web application where users can upload sky images to predict weather conditions.
+### Save Model
+The trained model is saved using the command `model.save('weather_model.h5')` to allow for reuse without retraining. The model is then downloaded from Google Colab using `files.download()` for deployment to the web application.
 
-### Streamlit Application
+### Flask Application
+Next, a project folder named `WEATHER_PROJECT` is created, which contains the following files:
+- `app.py`: The main Flask application file.
+- `weather_model.h5`: The trained CNN model.
+- `classes.txt`: A file containing the class labels (sunny, cloudy, and rainy).
+- `requirements.txt`: A file listing the project dependencies.
+- `templates/index.html`: The main HTML page (frontend).
+- `static/uploads`: A folder to temporarily store uploaded images.
+
+#### Flask Application Workflow
 1. **Upload Image:** Users can upload sky images in JPG, JPEG, or PNG format.
 2. **Weather Prediction:** The model classifies the image and predicts the weather condition (sunny, cloudy, or rainy).
-The web interface displays the predicted class and confidence level for the uploaded image.
+   - The web interface displays the predicted class and confidence level for the uploaded image.
+
+### Website Interface
+Below is the initial interface of the website for uploading sky images to predict weather conditions. This feature is built using Flask and supports JPG, JPEG, and PNG image formats. In this example, the uploaded image was successfully classified as 'shine' with a confidence level of 99.99%.
 
 ## Installation
 ### Prerequisites
 - Python 3.10
 - TensorFlow
 - Flask
-- NumPy
+- NumPy & Pandas
 - Pillow
 
 ### Steps to Run the Project
@@ -65,3 +84,5 @@ The web interface displays the predicted class and confidence level for the uplo
    ```bash
    python app.py
 5. Open your browser and go to http://127.0.0.1:5000 to view the web application.
+
+   
