@@ -38,12 +38,13 @@ The dataset used in this project is the [Weather Recognizer with CNN dataset](ht
 - Early stopping is used to prevent overfitting during training, with a maximum of 30 epochs.
 
 ## Evaluation Model
-- The model's performance is evaluated using accuracy, loss, precision, recall, and F1-score.
+- The model's performance is evaluated using accuracy, and loss.
 
 ## Results 🎯
 - **Training Accuracy:** 87.95% with a loss of 0.2886.
 - **Validation Accuracy:** 92.21% with a loss of 0.2831.
 The model shows great performance with high accuracy and low loss values, demonstrating its ability to generalize well to new sky images.
+![Training and Validation Results](assets/results.png)
 
 ## Deployment
 ### Save Model
