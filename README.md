@@ -41,9 +41,8 @@ The dataset used in this project is the [Weather Recognizer with CNN dataset](ht
 - The model's performance is evaluated using accuracy, and loss.
 
 ## Results 🎯
-- **Training Accuracy:** 87.95% with a loss of 0.2886.
-- **Validation Accuracy:** 92.21% with a loss of 0.2831.
-The model shows great performance with high accuracy and low loss values, demonstrating its ability to generalize well to new sky images.
+- **Training Accuracy:** 90.39% with a loss of 0.2450.
+- **Validation Accuracy:**  86.36% with a loss of 0.3636.
 <div style="text-align: center;">
     <img src="assets/result.png" alt="Training and Validation Results" width="500"/>
 </div>
