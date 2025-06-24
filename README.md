@@ -9,7 +9,6 @@ This project is focused on building a weather prediction system based on sky ima
 - [CNN Architecture](#cnn-architecture-)
 - [Model Training](#model-training-)
 - [Evaluation Model](#evaluation-model-)
-- [Results](#results-)
 - [Deployment](#deployment-)
   - [Save Model](#save-model-)
   - [Flask Application](#flask-application-)
@@ -37,10 +36,7 @@ The dataset used in this project is the [Weather Recognizer with CNN dataset](ht
 - Model is trained using the **Adam optimizer** and **categorical cross-entropy loss**.
 - Early stopping is used to prevent overfitting during training, with a maximum of 30 epochs.
 
-## 🧪 Evaluation Model
-- The model's performance is evaluated using accuracy, and loss.
-
-## 🎯 Results 
+## 🧪 Evaluation Model 
 - **Training Accuracy:** 90.39% with a loss of 0.2450.
 - **Validation Accuracy:**  86.36% with a loss of 0.3636.
 <div style="text-align: center;">
