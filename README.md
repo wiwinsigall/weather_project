@@ -23,22 +23,31 @@ The dataset used in this project is the [Weather Recognizer with CNN dataset](ht
 - 🌞 Shine (253 images)
 - ☁️ Clody (300 images)
 - 🌧️ Rainy (215 images)
-
+ 
 ## 🧠 CNN Architecture
-- The model consists of multiple layers:
-  - **Convolutional Layers (Conv2D)** for feature extraction (edge, texture, and patterns).
-  - **MaxPooling Layers (MaxPooling2D)** for dimensionality reduction.
-  - **Flatten Layer** to convert 2D features to a 1D vector.
-  - **Dense Layers** for classification.
-  - **Dropout** layer to prevent overfitting.
 
-## 📈 Model Training 
-- Model is trained using the **Adam optimizer** and **categorical cross-entropy loss**.
-- Early stopping is used to prevent overfitting during training, with a maximum of 30 epochs.
+The best-performing CNN model was built using **two convolutional layers** with filters `(32, 64)`, each followed by **max pooling** to extract features from input images sized `150x150` pixels. After flattening the extracted features, the model includes a **dense layer with 128 units** and a **dropout rate of 0.5** to reduce overfitting.
+
+This architecture, trained using the **Adam optimizer**, achieved the **highest validation accuracy of 90.9%** and **training accuracy of 91.5%**, making it optimal for classifying weather conditions based on sky images.
+
+**Architecture summary:**
+- 🧩 **Conv2D Layers**: Filters (32, 64) for feature extraction
+- 🌀 **MaxPooling2D**: Spatial dimension reduction
+- 🧱 **Flatten Layer**: Converts 2D features to 1D
+- 🔢 **Dense Layer**: 128 units, ReLU activation
+- 🧯 **Dropout**: 0.5 to reduce overfitting
+- 🏷️ **Output Layer**: Softmax activation for 3 weather classes
+
+## 📈 Model Training
+- Trained using the **Adam optimizer** and **categorical cross-entropy loss**.
+- **Early stopping** was applied to prevent overfitting, with up to 30 training epochs.
+
 
 ## 🧪 Evaluation Model 
+
 - **Training Accuracy:** 90.39% with a loss of 0.2450.
 - **Validation Accuracy:**  86.36% with a loss of 0.3636.
+- 
 <div style="text-align: center;">
     <img src="assets/result.png" alt="Training and Validation Results" width="500"/>
 </div>
