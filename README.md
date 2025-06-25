@@ -12,8 +12,6 @@ The dataset used in this project is the [Weather Recognizer with CNN dataset](ht
 ## 🧠 CNN Architecture
 The best-performing CNN model was built using **two convolutional layers** with filters (32, 64), each followed by **max pooling** to extract features from input images sized 150x150 pixels. After flattening the extracted features, the model includes a **dense layer with 128 units** and a **dropout rate of 0.5** to reduce overfitting.
 
-This architecture, trained using the **Adam optimizer**, achieved the **highest validation accuracy of 90.9%** and **training accuracy of 91.5%**, making it optimal for classifying weather conditions based on sky images.
-
 **Architecture summary:**
 - 🧩 **Conv2D Layers**: Filters (32, 64) for feature extraction
 - 🌀 **MaxPooling2D**: Spatial dimension reduction
@@ -27,8 +25,8 @@ This architecture, trained using the **Adam optimizer**, achieved the **highest 
 - **Early stopping** was applied to prevent overfitting, with up to 30 training epochs.
 
 ## 🧪 Evaluation Model 
-- **Training Accuracy:** 90.39% with a loss of 0.2450.
-- **Validation Accuracy:**  86.36% with a loss of 0.3636.
+- **Training Accuracy:** 90.39%
+- **Validation Accuracy:**  86.36%
 
 <div style="text-align: center;">
     <img src="assets/result.png" alt="Training and Validation Results" width="500"/>
