@@ -5,18 +5,18 @@ This project is focused on building a weather prediction system based on sky ima
 
 ## 📚 Table of Contents
 - [Overview](#overview)
-- [Dataset](#dataset-)
-- [CNN Architecture](#cnn-architecture-)
-- [Model Training](#model-training-)
-- [Evaluation Model](#evaluation-model-)
-- [Deployment](#deployment-)
-  - [Save Model](#save-model-)
-  - [Flask Application](#flask-application-)
-  - [Flask Application Workflow](#flask-application-workflow-)
-  - [Website Interface](#website-interface-)
-- [Installation](#installation-)
-  - [Prerequisites](#prerequisites-)
-  - [Steps to Run the Project](#steps-to-run-the-project-)
+- [Dataset](#dataset)
+- [CNN Architecture](#cnn-architecture)
+- [Model Training](#model-training)
+- [Evaluation Model](#evaluation-model)
+- [Deployment](#deployment)
+  - [Save Model](#save-model)
+  - [Flask Application](#flask-application)
+  - [Flask Application Workflow](#flask-application-workflow)
+  - [Website Interface](#website-interface)
+- [Installation](#installation)
+  - [Prerequisites](#prerequisites)
+  - [Steps to Run the Project](#steps-to-run-the-project)
 
 ## 📊 Dataset 
 The dataset used in this project is the [Weather Recognizer with CNN dataset](https://www.kaggle.com/datasets/abhay06102003/weather-recognizer-with-cnn) from Kaggle. It consists of sky images classified into three weather conditions:
