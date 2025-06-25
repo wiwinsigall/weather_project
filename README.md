@@ -1,7 +1,7 @@
 # 🌤️ Prediction of Weather Conditions Based on Screen Images Using CNN
 
 ## 🧭 Overview
-This project is focused on building a weather prediction system based on sky images using Convolutional Neural Networks (CNN). The model is capable of detecting and classifying weather conditions such as sunny, cloudy, and rainy from static sky images. The system is trained using the "Weather Recognizer with CNN" dataset from Kaggle.
+This project is focused on building a weather prediction system based on sky images using Convolutional Neural Networks (CNN). The model is capable of detecting and classifying weather conditions such as shine, clody, and rainy from static sky images. The system is trained using the "Weather Recognizer with CNN" dataset from Kaggle.
 
 ## 📊 Dataset 
 The dataset used in this project is the [Weather Recognizer with CNN dataset](https://www.kaggle.com/datasets/abhay06102003/weather-recognizer-with-cnn) from Kaggle. It consists of sky images classified into three weather conditions:
@@ -49,7 +49,7 @@ Next, a project folder named WEATHER_PROJECT is created, which contains the foll
 
 #### 🔁 Flask Application Workflow
 1. **Upload Image:** Users can upload sky images in JPG, JPEG, or PNG format.
-2. **Weather Prediction:** The model classifies the image and predicts the weather condition (sunny, cloudy, or rainy).
+2. **Weather Prediction:** The model classifies the image and predicts the weather condition (shine, clody, or rainy).
    - The web interface displays the predicted class and confidence level for the uploaded image.
 
 ### 🌐 Website Interface 
@@ -79,6 +79,6 @@ Below is the initial interface of the website for uploading sky images to predic
 4. Run the application:
    bash
    python app.py
-5. Open your browser and go to [http://127.0.0.1:5000](https://huggingface.co/spaces/winwin06/weather_project) to view the web application.
+5. Open your browser and go to (https://huggingface.co/spaces/winwin06/weather_project) to view the web application.
 
    
