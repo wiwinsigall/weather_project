@@ -79,6 +79,6 @@ Below is the initial interface of the website for uploading sky images to predic
 4. Run the application:
    bash
    python app.py
-5. Open your browser and go to http://127.0.0.1:5000 to view the web application.
+5. Open your browser and go to [http://127.0.0.1:5000](https://huggingface.co/spaces/winwin06/weather_project) to view the web application.
 
    
